@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(assets/bg4.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 ;
+    bottom: 8%;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+nav .logo {
+    width: 170px;
+    cursor: pointer;
+    
+}
+nav .cart{
+width: 40px;
+cursor: pointer;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end; 
+    flex: 1;
+    padding-right: 40px;
+    text-align: center;
+    list-style-type: none;
+}
+ul li {
+    margin-right: 10px;
+}
+ul li a {
+    position: relative;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white
+    font-size: 16px;
+
+    
+}
+ul li a::after {
+    content: '';
+    background:#ffa400;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+    transform: translate(-50%, -5%)
+    transition: 0.3s;
+}
+
+ul li a:hover::after{
+    width: 30%;
+  
+  
+}
+ul li a:hover{
+    color:rgb(150, 36, 243)
+    font-size: 20px;
+  
+}
+.site-container{
+    bottom: 8%;
+    left: 5%;
+    color: white  
+    
+}
+.site-container p{
+    font-size: 50px;
+    font-weight: bold;
+}   
+.site-container h1{
+    font-size: 120px;
+    line-height: 120px;
+    margin-left: -10px;
+    color: transparent;
+    webkit-text-stroke: 1px white;
+    background: url(assets/pattern.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: animate 5s linear 2S infinite alternate;
+    
+}
+@keyframes animate{
+    100%{
+            background-position: 500px 0;
+    }
+}
+.site-container h3{
+    font-size: 40px;
+    font-weight: 500;
+}  
+site-container .row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.row a{
+    width: 170px;
+   height: 100px;
+   border: 1px solid white;
+   margin: 5px;
+   
+   
+}
+.row a:hover{
+    color: black;
+    background-color: white;
+    border:white 1px solid white;
+}
+.row span{
+    font-size: 18px;
+    margin-left: 10px;
+   
+
+}
+.social-icons{
+    position: absolute;
+    right:5%;
+    bottom: 10%;
+
+}
+.social-icons a[
+    padding: 5px;
+    marging-right: 5px;
+    
+]
+      
