@@ -97,7 +97,7 @@ ul li a:hover{
     color: transparent;
     webkit-text-stroke: 1px white;
     background: url(assets/pattern.png);
-    -webkit-background-clip: text;
+    webkit-background-clip: text;
     background-position: 0 0;
     animation: animate 5s linear 2S infinite alternate;
     
