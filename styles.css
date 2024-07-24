@@ -13,8 +13,8 @@
     background-image: url(assets/bg4.jpg);
     background-size: cover;
     background-position: center;
-    padding: 0 ;
-    bottom: 8%;
+    padding: 0 8%;
+    
 
 }
 nav {
@@ -48,7 +48,7 @@ ul li a {
     position: relative;
     padding: 10px 20px;
     text-decoration: none;
-    color: white
+    color: white;
     font-size: 16px;
 
     
@@ -61,7 +61,7 @@ ul li a::after {
     right: 0;
     width: 0;
     height: 3px;
-    transform: translate(-50%, -5%)
+    transform: translate(-50%, -5%);
     transition: 0.3s;
 }
 
@@ -71,19 +71,24 @@ ul li a:hover::after{
   
 }
 ul li a:hover{
-    color:rgb(150, 36, 243)
-    font-size: 20px;
-  
+    color:red;
+    background-image: url(assets/wanen.png) ;
+  border: 1px solid white;
 }
 .site-container{
-    bottom: 8%;
     left: 5%;
-    color: white  
+    color: white;
+    position: absolute;
+    bottom: 10%;
+    padding: 5px;
+    margin-right: 5px;
+    right: 5%;
     
 }
 .site-container p{
     font-size: 50px;
     font-weight: bold;
+    color:gold;
 }   
 .site-container h1{
     font-size: 120px;
@@ -113,7 +118,7 @@ site-container .row{
    
 }
 .row a{
-    width: 170px;
+    width: 50px;
    height: 100px;
    border: 1px solid white;
    margin: 5px;
@@ -133,13 +138,13 @@ site-container .row{
 }
 .social-icons{
     position: absolute;
-    right:5%;
+    right:10px;
     bottom: 10%;
 
 }
-.social-icons a[
+.social-icons a{
     padding: 5px;
-    marging-right: 5px;
+    margin-right: 5px;
     
-]
+}
       
